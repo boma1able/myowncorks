@@ -1,0 +1,229 @@
+@media screen and (max-width: 767px) {
+  .height2 {
+    height: 120px;
+  }
+  .height3 {
+    height: 240px;
+  }
+  .box1 {
+  }
+  .logo{
+    margin: 30px 15px 5px;
+    width: 130px;
+  }
+  .box1-1 p{
+    margin: 0 15px;
+    font-size: .6em;
+  }
+  .box2 {
+    width: 25%;
+    top: 120px;
+  }
+  .phone{
+    width: 100px;
+  }
+  .bottle{
+    width: 50px;
+  }
+  .box3-22{
+    font-size: .6em;
+  }
+  .box4{
+    height: 60px;
+  }
+  .corkscrew{
+    width: 50px;
+  }
+  .box5 {
+    height: 60px;
+    font-size: .6em;
+  }
+  .box6{
+    height: 60px;
+  }
+  .box6-1{
+    height: 60px;
+  }
+  .facebook{
+    padding-top: 16px;
+  }
+  .facebook i{
+    font-size: 1.5em;
+  }
+    .box6-2{
+    height: 60px;
+  }
+  .twitter{
+    padding-top: 16px;
+  }
+  .twitter i{
+    font-size: 1.5em;
+  }
+  .box7{
+    height: 60px;
+  }
+  .box8{
+    height: 180px;
+  }
+  .subscribe h5{
+    margin: 0;
+  }
+  .sub-form form{
+    margin-top: 10px;
+  }
+  .sub-btn{
+    padding: 8px 7px 7px;
+  }
+  .box13{
+    height: 60px;
+  }
+  .grape{
+    width: 50px;
+  }
+  .box14{
+    height: 60px;
+  }
+}
+
+
+/* max-width: 480px */
+
+@media screen and (max-width: 480px) {
+  .height2 {
+    height: 120px;
+  }
+  .height3 {
+    height: 240px;
+  }
+  .box1 {
+    width: 100%;
+  }
+  .box1-1{
+    width: 100%;
+    text-align: center;
+  }
+  .logo{
+    margin: 5% auto 10px;
+    width: 200px;
+  }
+  .box1-1 p{
+    margin: 0 15px;
+    font-size: .9em;
+  }
+  .box2 {
+    width: 25%;
+    top: 120px;
+  }
+  .phone{
+    width: 70px;
+  }
+  .bottle{
+    width: 50px;
+  }
+  .box3{
+    width: 75%;
+    height: 180px;
+  }
+  .box3-22{
+    font-size: .6em;
+  }
+  .box4{
+    height: 60px;
+  }
+  .corkscrew{
+    width: 50px;
+  }
+  .box5 {
+    height: 60px;
+    font-size: .6em;
+  }
+  .box6{
+    height: 60px;
+  }
+  .box6-1{
+    height: 60px;
+  }
+  .facebook{
+    padding-top: 16px;
+  }
+  .facebook i{
+    font-size: 1.5em;
+  }
+    .box6-2{
+    height: 60px;
+  }
+  .twitter{
+    padding-top: 16px;
+  }
+  .twitter i{
+    font-size: 1.5em;
+  }
+  .box7{
+    height: 60px;
+  }
+  .box7 a h3{
+    font-size: 1.5em;
+  }
+  .box8{
+    height: 240px;
+  }
+  .thing{
+    width: 50px;
+  }
+  .subscribe h5{
+    font-size: 1em;
+    padding-bottom: 15px;
+  }
+  .sub-form form{
+    margin-top: 10px;
+  }
+  .sub-form form input{
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  .sub-btn{
+    padding: 8px 7px 7px;
+  }
+  .sub p {
+    font-size: .6em;
+  }
+  .cap {
+    width: 80px;
+  }
+  .box11{
+    width: 75%;
+  }
+  .share a h3{
+    font-size: 1.5em;
+  }
+  .share a p{
+    font-size: .8em;
+  }
+  .box13{
+    height: 120px;
+  }
+  .grape{
+    width: 50px;
+  }
+  .box14{
+    height: 60px;
+    left: 0!important;
+    top: 540px!important;
+  }
+  .glass{
+    width: 60px;
+  }
+  .copy p{
+    font-size: .7em;
+  }
+}
+
+
+
+
+
+
+
+
+
+
