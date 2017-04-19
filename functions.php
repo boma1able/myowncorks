@@ -105,9 +105,25 @@ add_action( 'widgets_init', 'myowncorks_widgets_init' );
  * Enqueue scripts and styles.
  */
 function myowncorks_scripts() {
-	wp_enqueue_style( 'myowncorks-style', get_stylesheet_uri() );
-
+  wp_enqueue_style( 'myowncorks-bootstrap', get_template_directory_uri() . '/css/bootstrap.css');
+  wp_enqueue_style( 'myowncorks-grid', get_template_directory_uri() . '/css/grid.css');
+  wp_enqueue_style( 'myowncorks-style', get_template_directory_uri() . '/css/style.css');
+  wp_enqueue_style( 'myowncorks-media', get_template_directory_uri() . '/css/media.css');
+  wp_register_style( 'jquery', 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css');
+  wp_register_style( 'jquery', 'https://fonts.googleapis.com/css?family=Alegreya+Sans|Roboto+Mono', '', '', false);
+  wp_enqueue_style('jquery');
+  
+  	wp_deregister_script( 'jquery' );
+	wp_register_script( 'jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js');
+	wp_register_script( 'jquery', 'https://use.fontawesome.com/813411220b.js');
+	wp_enqueue_script( 'jquery' );
+  	wp_enqueue_script( 'myowncorks-bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array(), '20151215', true );
+	wp_enqueue_script( 'masonry', get_template_directory_uri() . '/js/masonry.pkgd.min.js', array(), '20151215', true );
+	wp_enqueue_script( 'grid-masonry', get_template_directory_uri() . '/js/masonry-grid.js', array(), '20151215', true );
+	wp_enqueue_script( 'loader', get_template_directory_uri() . '/js/loader.js', array(), '20151215', true );
+  
 	wp_enqueue_script( 'myowncorks-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+;
 
 	wp_enqueue_script( 'myowncorks-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
@@ -141,3 +157,27 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+
+
+remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10);
+remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10);
+
+add_action('woocommerce_before_main_content', 'my_theme_wrapper_start', 10);
+add_action('woocommerce_after_main_content', 'my_theme_wrapper_end', 10);
+
+function my_theme_wrapper_start() {
+  echo '<body>';
+}
+
+function my_theme_wrapper_end() {
+  echo '</body>';
+}
+
+
+
+
+add_action( 'after_setup_theme', 'woocommerce_support' );
+function woocommerce_support() {
+    add_theme_support( 'woocommerce' );
+}
