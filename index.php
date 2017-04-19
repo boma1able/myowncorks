@@ -26,7 +26,7 @@
     <div class="grid-item box3 height2">
       <div class="box3-1">
         <div class="bottle">
-          <a data-toggle="tooltip" data-placement="right" title="Enter to Store" href=""><img class="img-responsive" src="<?php echo home_url('/wp-content/themes/myowncorks/', 'http');?>img/bottle.png" alt="bottle image"></a>
+          <a data-toggle="tooltip" data-placement="right" title="Enter to Store" href="http://localhost/woo/shop/"><img class="img-responsive" src="<?php echo home_url('/wp-content/themes/myowncorks/', 'http');?>img/bottle.png" alt="bottle image"></a>
         </div>
       </div>
       <div class="box3-2">

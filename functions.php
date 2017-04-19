@@ -109,6 +109,7 @@ function myowncorks_scripts() {
   wp_enqueue_style( 'myowncorks-grid', get_template_directory_uri() . '/css/grid.css');
   wp_enqueue_style( 'myowncorks-style', get_template_directory_uri() . '/css/style.css');
   wp_enqueue_style( 'myowncorks-media', get_template_directory_uri() . '/css/media.css');
+  wp_enqueue_style( 'myowncorks-woo', get_template_directory_uri() . '/css/woo.css');
   wp_register_style( 'jquery', 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css');
   wp_register_style( 'jquery', 'https://fonts.googleapis.com/css?family=Alegreya+Sans|Roboto+Mono', '', '', false);
   wp_enqueue_style('jquery');
